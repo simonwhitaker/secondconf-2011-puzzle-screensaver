@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F48F4F41142DDBED004E8956 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F4F40142DDBED004E8956 /* Cocoa.framework */; };
+		F48F4F43142DDBED004E8956 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F4F42142DDBED004E8956 /* ScreenSaver.framework */; };
+		F48F4F4D142DDBED004E8956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48F4F4B142DDBED004E8956 /* InfoPlist.strings */; };
+		F48F4F50142DDBED004E8956 /* Second_Conf_2011View.h in Headers */ = {isa = PBXBuildFile; fileRef = F48F4F4F142DDBED004E8956 /* Second_Conf_2011View.h */; };
+		F48F4F52142DDBED004E8956 /* Second_Conf_2011View.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F4F51142DDBED004E8956 /* Second_Conf_2011View.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F48F4F3D142DDBED004E8956 /* Second Conf 2011.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Second Conf 2011.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48F4F40142DDBED004E8956 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F48F4F42142DDBED004E8956 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		F48F4F45142DDBED004E8956 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F48F4F46142DDBED004E8956 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F48F4F47142DDBED004E8956 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F48F4F4A142DDBED004E8956 /* Second Conf 2011-Info.plist */ = {isa = PBXFileReference; path = "Second Conf 2011-Info.plist"; sourceTree = "<group>"; };
+		F48F4F4C142DDBED004E8956 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F48F4F4E142DDBED004E8956 /* Second Conf 2011-Prefix.pch */ = {isa = PBXFileReference; path = "Second Conf 2011-Prefix.pch"; sourceTree = "<group>"; };
+		F48F4F4F142DDBED004E8956 /* Second_Conf_2011View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Second_Conf_2011View.h; sourceTree = "<group>"; };
+		F48F4F51142DDBED004E8956 /* Second_Conf_2011View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Second_Conf_2011View.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F48F4F38142DDBED004E8956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F4F41142DDBED004E8956 /* Cocoa.framework in Frameworks */,
+				F48F4F43142DDBED004E8956 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F48F4F30142DDBEC004E8956 = {
+			isa = PBXGroup;
+			children = (
+				F48F4F48142DDBED004E8956 /* Second Conf 2011 */,
+				F48F4F3F142DDBED004E8956 /* Frameworks */,
+				F48F4F3E142DDBED004E8956 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F48F4F3E142DDBED004E8956 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F48F4F3D142DDBED004E8956 /* Second Conf 2011.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F48F4F3F142DDBED004E8956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48F4F40142DDBED004E8956 /* Cocoa.framework */,
+				F48F4F42142DDBED004E8956 /* ScreenSaver.framework */,
+				F48F4F44142DDBED004E8956 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F48F4F44142DDBED004E8956 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48F4F45142DDBED004E8956 /* AppKit.framework */,
+				F48F4F46142DDBED004E8956 /* CoreData.framework */,
+				F48F4F47142DDBED004E8956 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F48F4F48142DDBED004E8956 /* Second Conf 2011 */ = {
+			isa = PBXGroup;
+			children = (
+				F48F4F4F142DDBED004E8956 /* Second_Conf_2011View.h */,
+				F48F4F51142DDBED004E8956 /* Second_Conf_2011View.m */,
+				F48F4F49142DDBED004E8956 /* Supporting Files */,
+			);
+			path = "Second Conf 2011";
+			sourceTree = "<group>";
+		};
+		F48F4F49142DDBED004E8956 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F48F4F4A142DDBED004E8956 /* Second Conf 2011-Info.plist */,
+				F48F4F4B142DDBED004E8956 /* InfoPlist.strings */,
+				F48F4F4E142DDBED004E8956 /* Second Conf 2011-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F48F4F39142DDBED004E8956 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F4F50142DDBED004E8956 /* Second_Conf_2011View.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F48F4F3C142DDBED004E8956 /* Second Conf 2011 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48F4F55142DDBED004E8956 /* Build configuration list for PBXNativeTarget "Second Conf 2011" */;
+			buildPhases = (
+				F48F4F37142DDBED004E8956 /* Sources */,
+				F48F4F38142DDBED004E8956 /* Frameworks */,
+				F48F4F39142DDBED004E8956 /* Headers */,
+				F48F4F3A142DDBED004E8956 /* Resources */,
+				F48F4F3B142DDBED004E8956 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Second Conf 2011";
+			productName = "Second Conf 2011";
+			productReference = F48F4F3D142DDBED004E8956 /* Second Conf 2011.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F48F4F32142DDBEC004E8956 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Goo Software Ltd";
+			};
+			buildConfigurationList = F48F4F35142DDBEC004E8956 /* Build configuration list for PBXProject "Second Conf 2011" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F48F4F30142DDBEC004E8956;
+			productRefGroup = F48F4F3E142DDBED004E8956 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F48F4F3C142DDBED004E8956 /* Second Conf 2011 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F48F4F3A142DDBED004E8956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F4F4D142DDBED004E8956 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F48F4F3B142DDBED004E8956 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F48F4F37142DDBED004E8956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48F4F52142DDBED004E8956 /* Second_Conf_2011View.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F48F4F4B142DDBED004E8956 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48F4F4C142DDBED004E8956 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F48F4F53142DDBED004E8956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F48F4F54142DDBED004E8956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F48F4F56142DDBED004E8956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Second Conf 2011/Second Conf 2011-Prefix.pch";
+				INFOPLIST_FILE = "Second Conf 2011/Second Conf 2011-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F48F4F57142DDBED004E8956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Second Conf 2011/Second Conf 2011-Prefix.pch";
+				INFOPLIST_FILE = "Second Conf 2011/Second Conf 2011-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F48F4F35142DDBEC004E8956 /* Build configuration list for PBXProject "Second Conf 2011" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48F4F53142DDBED004E8956 /* Debug */,
+				F48F4F54142DDBED004E8956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F48F4F55142DDBED004E8956 /* Build configuration list for PBXNativeTarget "Second Conf 2011" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48F4F56142DDBED004E8956 /* Debug */,
+				F48F4F57142DDBED004E8956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F48F4F32142DDBEC004E8956 /* Project object */;
+}
