@@ -54,16 +54,6 @@
     return self;
 }
 
-- (void)startAnimation
-{
-    [super startAnimation];
-}
-
-- (void)stopAnimation
-{
-    [super stopAnimation];
-}
-
 - (void)drawRect:(NSRect)rect
 {
     [super drawRect:rect];
@@ -77,8 +67,8 @@
     // as the radius of the black circle in the middle of the puzzle
     CGFloat baseRadius = limit / 5.0;
     
-    // chunkWidth is the width ("thickness"?) of the chunks, i.e. the distance in
-    // pixels between the inner curve and the outer curve of a chunk.
+    // chunkWidth is the width ("thickness"?) of the chunks, i.e. the distance
+    // between the inner curve and the outer curve of a chunk.
     CGFloat chunkWidth = baseRadius / 2.5;
 
     // Declare the constants we'll need to draw the logo
@@ -90,26 +80,28 @@
         NSColor * yellowColor = [NSColor colorWithDeviceHue:0.13 saturation:1.0 brightness:1.0 alpha:1.0];
         
         Segments = [[NSArray alloc] initWithObjects:
-                    [SCSegment segmentWithColor:yellowColor andNumberOfChunks:7],
-                    [SCSegment segmentWithColor:grayColor   andNumberOfChunks:2],
-                    [SCSegment segmentWithColor:orangeColor andNumberOfChunks:7],
-                    [SCSegment segmentWithColor:yellowColor andNumberOfChunks:2],
                     [SCSegment segmentWithColor:grayColor   andNumberOfChunks:5],
                     [SCSegment segmentWithColor:orangeColor andNumberOfChunks:3],
                     [SCSegment segmentWithColor:yellowColor andNumberOfChunks:5],
                     [SCSegment segmentWithColor:orangeColor andNumberOfChunks:6],
                     [SCSegment segmentWithColor:grayColor   andNumberOfChunks:7],
+                    [SCSegment segmentWithColor:orangeColor andNumberOfChunks:0],
+                    [SCSegment segmentWithColor:yellowColor andNumberOfChunks:7],
+                    [SCSegment segmentWithColor:grayColor   andNumberOfChunks:2],
+                    [SCSegment segmentWithColor:orangeColor andNumberOfChunks:7],
+                    [SCSegment segmentWithColor:yellowColor andNumberOfChunks:2],
                     nil];
     }
     
     // Step through the segments. A segment is all the stuff between two radii. Or to
-    // put it another way, it's a slice of pie. Mmmm, pie! (Please don't confuse 
-    // "Mmmm, pie!" with M_PI, for that way lies disaster.
+    // put it another way, it's a slice of pie. Mmmm, pie! 
+    //
+    // (Please don't confuse "Mmmm, pie!" with M_PI, for that way lies disaster.)
     for (NSUInteger i = 0; i < [Segments count]; i++) {
         SCSegment *segment = [Segments objectAtIndex:i];
         for (NSUInteger chunk = 0; chunk < segment.numberOfChunks; chunk++) {
-            CGFloat segmentArcRads = M_PI * 2 / 10.0;
-            CGFloat offsetRads = self.angleOffsetRads - 4 * segmentArcRads;
+            CGFloat segmentArcRads = M_PI * 2 / [Segments count];
+            CGFloat offsetRads = self.angleOffsetRads;
             
             CGFloat startRads = segmentArcRads * i + offsetRads;
             CGFloat endRads = startRads + segmentArcRads;
@@ -124,8 +116,10 @@
                                             center.y + (insideRadius)* cosf(endRads));
             
             NSBezierPath *aPath = [NSBezierPath bezierPath];
-            [aPath setLineWidth:chunkWidth / 10.0];
             
+            // Set the stroke width to a suitable fraction of the size of a chunk
+            [aPath setLineWidth:chunkWidth / 10.0];
+
             // Convert angles in radians that increase clockwise from 12 o'clock to
             // angles in degrees that increase anticlockwise from 3 o'clock
             CGFloat startDegrees = 90 - (startRads / M_PI * 180.0);
@@ -144,11 +138,11 @@
                                           startAngle:endDegrees
                                             endAngle:startDegrees
                                            clockwise:NO];
-            if (chunk == self.pulseChunk) {
+            if (self.pulseChunk > chunk) {
                 [[NSColor colorWithDeviceHue:segment.color.hueComponent
                                   saturation:segment.color.saturationComponent
                                   brightness:segment.color.brightnessComponent
-                                       alpha:0.1 + 0.1 * chunk] setFill];
+                                       alpha:0.1 + 0.3 * (self.pulseChunk - chunk)] setFill];
                 
             }
             else {

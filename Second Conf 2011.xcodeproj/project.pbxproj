@@ -137,6 +137,7 @@
 		F48F4F32142DDBEC004E8956 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Goo Software Ltd";
 			};
 			buildConfigurationList = F48F4F35142DDBEC004E8956 /* Build configuration list for PBXProject "Second Conf 2011" */;
