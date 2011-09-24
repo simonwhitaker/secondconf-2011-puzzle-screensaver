@@ -22,9 +22,7 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2011 Goo Software Ltd. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>Second_Conf_2011View</string>
+	<string>SCScreenSaverView</string>
 </dict>
 </plist>
