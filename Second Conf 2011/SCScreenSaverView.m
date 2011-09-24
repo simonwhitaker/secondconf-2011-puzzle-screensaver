@@ -170,7 +170,7 @@
 - (void)animateOneFrame
 {
     static CGFloat RevsPerSecond = 1.0 / 60.0;
-    static NSTimeInterval PulseChunkChangeDelay = 0.1;
+    static NSTimeInterval PulseChunkChangeDelay = 0.05;
     NSDate * now = [NSDate date];
     
     if (self.lastFired == nil) {
