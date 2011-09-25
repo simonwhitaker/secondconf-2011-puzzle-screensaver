@@ -100,11 +100,10 @@
     for (NSUInteger i = 0; i < [Segments count]; i++) {
         SCSegment *segment = [Segments objectAtIndex:i];
         for (NSUInteger chunk = 0; chunk < segment.numberOfChunks; chunk++) {
-            CGFloat segmentArcRads = M_PI * 2 / [Segments count];
-            CGFloat offsetRads = self.angleOffsetRads;
+            CGFloat segmentStartAngleRads = M_PI * 2 / [Segments count];
             
-            CGFloat startRads = segmentArcRads * i + offsetRads;
-            CGFloat endRads = startRads + segmentArcRads;
+            CGFloat startRads = segmentStartAngleRads * i + self.angleOffsetRads;
+            CGFloat endRads = startRads + segmentStartAngleRads;
             CGFloat insideRadius = baseRadius + chunkWidth * chunk;
             CGFloat outsideRadius = insideRadius + chunkWidth;
             
