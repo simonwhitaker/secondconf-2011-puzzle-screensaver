@@ -5,11 +5,7 @@ from [Second Conf][sc] 2011.
 
 Please clone, adapt and share. I'd love to see what you do with it!
 
-<video width="336" 
-    height="225" 
-    src="http://f.cl.ly/items/103n1T0H2a1j1T2q3W3E/sc2011-screensaver-demo.mov" autoplay>
-</video>
-
+![screenshot](http://f.cl.ly/items/2P0I0b0r320w050w0R1b/sc2011-screensaver.png)
 
 ## Licensing
 
