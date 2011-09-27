@@ -12,6 +12,13 @@
 		F48F4F4D142DDBED004E8956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48F4F4B142DDBED004E8956 /* InfoPlist.strings */; };
 		F48F4F50142DDBED004E8956 /* SCScreenSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F48F4F4F142DDBED004E8956 /* SCScreenSaverView.h */; };
 		F48F4F52142DDBED004E8956 /* SCScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F4F51142DDBED004E8956 /* SCScreenSaverView.m */; };
+		F4DEA24D14329800000AEC75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48F4F40142DDBED004E8956 /* Cocoa.framework */; };
+		F4DEA25314329800000AEC75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DEA25114329800000AEC75 /* InfoPlist.strings */; };
+		F4DEA25514329800000AEC75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA25414329800000AEC75 /* main.m */; };
+		F4DEA25C14329800000AEC75 /* Second_Conf_2011_PreviewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA25B14329800000AEC75 /* Second_Conf_2011_PreviewAppDelegate.m */; };
+		F4DEA25F14329800000AEC75 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DEA25D14329800000AEC75 /* MainMenu.xib */; };
+		F4DEA264143298D4000AEC75 /* SCScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F4F51142DDBED004E8956 /* SCScreenSaverView.m */; };
+		F4DEA266143298E1000AEC75 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DEA265143298E1000AEC75 /* ScreenSaver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		F48F4F4E142DDBED004E8956 /* Second Conf 2011-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Second Conf 2011-Prefix.pch"; sourceTree = "<group>"; };
 		F48F4F4F142DDBED004E8956 /* SCScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SCScreenSaverView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		F48F4F51142DDBED004E8956 /* SCScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCScreenSaverView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F4DEA24B14329800000AEC75 /* Second Conf 2011 Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Second Conf 2011 Preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DEA25014329800000AEC75 /* Second Conf 2011 Preview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Second Conf 2011 Preview-Info.plist"; sourceTree = "<group>"; };
+		F4DEA25214329800000AEC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4DEA25414329800000AEC75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4DEA25614329800000AEC75 /* Second Conf 2011 Preview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Second Conf 2011 Preview-Prefix.pch"; sourceTree = "<group>"; };
+		F4DEA25A14329800000AEC75 /* Second_Conf_2011_PreviewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Second_Conf_2011_PreviewAppDelegate.h; sourceTree = "<group>"; };
+		F4DEA25B14329800000AEC75 /* Second_Conf_2011_PreviewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Second_Conf_2011_PreviewAppDelegate.m; sourceTree = "<group>"; };
+		F4DEA25E14329800000AEC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F4DEA265143298E1000AEC75 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +54,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4DEA24814329800000AEC75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DEA266143298E1000AEC75 /* ScreenSaver.framework in Frameworks */,
+				F4DEA24D14329800000AEC75 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F48F4F30142DDBEC004E8956 = {
 			isa = PBXGroup;
 			children = (
+				F4DEA265143298E1000AEC75 /* ScreenSaver.framework */,
 				F48F4F48142DDBED004E8956 /* Second Conf 2011 */,
+				F4DEA24E14329800000AEC75 /* Second Conf 2011 Preview */,
 				F48F4F3F142DDBED004E8956 /* Frameworks */,
 				F48F4F3E142DDBED004E8956 /* Products */,
 			);
@@ -54,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F48F4F3D142DDBED004E8956 /* Second Conf 2011.saver */,
+				F4DEA24B14329800000AEC75 /* Second Conf 2011 Preview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +126,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F4DEA24E14329800000AEC75 /* Second Conf 2011 Preview */ = {
+			isa = PBXGroup;
+			children = (
+				F4DEA25A14329800000AEC75 /* Second_Conf_2011_PreviewAppDelegate.h */,
+				F4DEA25B14329800000AEC75 /* Second_Conf_2011_PreviewAppDelegate.m */,
+				F4DEA25D14329800000AEC75 /* MainMenu.xib */,
+				F4DEA24F14329800000AEC75 /* Supporting Files */,
+			);
+			path = "Second Conf 2011 Preview";
+			sourceTree = "<group>";
+		};
+		F4DEA24F14329800000AEC75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4DEA25014329800000AEC75 /* Second Conf 2011 Preview-Info.plist */,
+				F4DEA25114329800000AEC75 /* InfoPlist.strings */,
+				F4DEA25414329800000AEC75 /* main.m */,
+				F4DEA25614329800000AEC75 /* Second Conf 2011 Preview-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,6 +181,23 @@
 			productReference = F48F4F3D142DDBED004E8956 /* Second Conf 2011.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		F4DEA24A14329800000AEC75 /* Second Conf 2011 Preview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DEA26214329800000AEC75 /* Build configuration list for PBXNativeTarget "Second Conf 2011 Preview" */;
+			buildPhases = (
+				F4DEA24714329800000AEC75 /* Sources */,
+				F4DEA24814329800000AEC75 /* Frameworks */,
+				F4DEA24914329800000AEC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Second Conf 2011 Preview";
+			productName = "Second Conf 2011 Preview";
+			productReference = F4DEA24B14329800000AEC75 /* Second Conf 2011 Preview.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				F48F4F3C142DDBED004E8956 /* Second Conf 2011 */,
+				F4DEA24A14329800000AEC75 /* Second Conf 2011 Preview */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +231,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48F4F4D142DDBED004E8956 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DEA24914329800000AEC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DEA25314329800000AEC75 /* InfoPlist.strings in Resources */,
+				F4DEA25F14329800000AEC75 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +264,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4DEA24714329800000AEC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DEA264143298D4000AEC75 /* SCScreenSaverView.m in Sources */,
+				F4DEA25514329800000AEC75 /* main.m in Sources */,
+				F4DEA25C14329800000AEC75 /* Second_Conf_2011_PreviewAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -196,6 +283,22 @@
 				F48F4F4C142DDBED004E8956 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4DEA25114329800000AEC75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4DEA25214329800000AEC75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4DEA25D14329800000AEC75 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4DEA25E14329800000AEC75 /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +375,28 @@
 			};
 			name = Release;
 		};
+		F4DEA26014329800000AEC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Second Conf 2011 Preview/Second Conf 2011 Preview-Prefix.pch";
+				INFOPLIST_FILE = "Second Conf 2011 Preview/Second Conf 2011 Preview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4DEA26114329800000AEC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Second Conf 2011 Preview/Second Conf 2011 Preview-Prefix.pch";
+				INFOPLIST_FILE = "Second Conf 2011 Preview/Second Conf 2011 Preview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -292,6 +417,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F4DEA26214329800000AEC75 /* Build configuration list for PBXNativeTarget "Second Conf 2011 Preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DEA26014329800000AEC75 /* Debug */,
+				F4DEA26114329800000AEC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

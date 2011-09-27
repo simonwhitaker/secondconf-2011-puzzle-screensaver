@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Second Conf 2011 Preview' target in the 'Second Conf 2011 Preview' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

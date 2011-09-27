@@ -54,6 +54,11 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    return [self initWithFrame:NSZeroRect isPreview:NO];
+}
+
 - (void)drawRect:(NSRect)rect
 {
     [super drawRect:rect];
